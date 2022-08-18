@@ -10,7 +10,7 @@ export const Producto = ({ datos,busqueda,pagina }) => {
     cantidad_disponible: datos.available_quantity,
     condicion: datos.condition,
     envio: datos.shipping,
-    imagen: datos.thumbnail
+    imagen: datos.thumbnail.replace("http","https")
   };
 
   const rutaProducto = "/"+busqueda+"/"+data.id+"?n="+pagina;   
